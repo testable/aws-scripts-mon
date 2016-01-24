@@ -611,10 +611,10 @@ if ($report_disk_space && ($report_inode_util || $report_inode_used || $report_i
         add_metric('DiskInodeUtilization', 'Percent', $inode_util, $fsystem, $mount);
       }
       if ($report_inode_used) {
-        add_metric('DiskInodeUsed', 'Inode', $inode_used, $fsystem, $mount);
+        add_metric('DiskInodeUsed', 'Count', $inode_used, $fsystem, $mount);
       }
       if ($report_inode_avail) {
-        add_metric('DiskInodeAvailable', 'Inode', $inode_avail, $fsystem, $mount);
+        add_metric('DiskInodeAvailable', 'Count', $inode_avail, $fsystem, $mount);
       }
     }
   }
